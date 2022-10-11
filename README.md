@@ -132,4 +132,3 @@ DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelA
 改citation
 改licence
 grammarly
-DeeptDCS 传数据
