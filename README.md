@@ -114,14 +114,7 @@ python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 ## Citation
 Use this bibtex to cite our paper:
 ```
-@misc{matterport_maskrcnn_2017,
-  title={Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow},
-  author={Waleed Abdulla},
-  year={2017},
-  publisher={Github},
-  journal={GitHub repository},
-  howpublished={\url{https://github.com/matterport/Mask_RCNN}},
-}
+
 ```
 
 # Acknowledgment
@@ -129,4 +122,3 @@ DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelA
 
 # TO DO
 change citation
-grammarly
