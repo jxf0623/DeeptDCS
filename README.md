@@ -70,7 +70,6 @@ To use the pre-trained model, please rename the model as 'DeeptDCS.hdf5' and cop
 - new  montage size (4*4cm<sup>2 </sup> square montage) ---------------[```AttnUnet_rect4040_19000241[4].hdf5```](https://drive.google.com/file/d/1pg2U7ad5xKvSlpvt7DCugYSYW-F92fm1/view?usp=sharing)
 
 
-
 ## Training and Testing
 ***Neural network selection***
 
@@ -83,24 +82,33 @@ self.model = self.attn_unet_3d
 self.model = self.attn_ResUnet_3d
 ```
 
-**1. Train and test a new model from scratch**
-- Clear or delete directory './saved_mode'
+**1. Test DeeptDCS Attention U-net model on the example dataset**
+- Download the example dataset [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
+- Create directory ```'./saved_model/'```
+- Download the pre-trained model [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing), rename it as ```DeeptDCS.hdf5```, and put it into the folder ```'./saved_model'```.
+```
+python train DeeptDCS.py --varification_test=True
+```
+
+**2. Train and test a new model from scratch**
+- Clear or delete directory ```'./saved_model/'```
+- - In [```dataloader.py```](./dataloader.py), change ```self.subjectIDs```, ```self.electrode_positions```, ```self.data_size_1position_1subject``` according to the new dataset.
 ```
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
-**2. Test a well-trained model**
+**3. Test a well-trained model**
 - Copy the model to  ```'./saved_mode'``` and rename it as 'DeeptDCS.hdf5'
 - In [```DeeptDCS.py```](./DeeptDCS.py), set ```args.epochs = 0```
 ```
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
-**3. Transfer learning for non-trained montage configurations**
+**4. Transfer learning for non-trained montage configurations**
 - Copy the pre-trained model to  './saved_mode' and rename it as 'DeeptDCS.hdf5'
 - In [```dataloader.py```](./dataloader.py), change ```self.subjectIDs```, ```self.electrode_positions```, ```self.data_size_1position_1subject``` according to the new dataset.
 ```
 python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 ```
-**4. Train and test on customdataset**
+**5. Train and test on customdataset**
 - Change [```dataloader.py```](./dataloader.py) to load data according to the costume dataset sturcutre.
 
 ## Citation
