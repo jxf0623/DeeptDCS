@@ -85,7 +85,7 @@ self.model = self.attn_ResUnet_3d(self.num_gpu)
 **1. Test DeeptDCS Attention U-net model on the example dataset**
 - Download the example dataset [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
 - Create directory ```'./saved_model/'```
-- Download the pre-trained model [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing), rename it as ```DeeptDCS.hdf5```, and put it into the folder ```'./saved_model'```.
+- Download the pre-trained model [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing), rename it as ```DeeptDCS.hdf5```, and put it into the folder ```'./saved_model/'```.
 ```
 python train DeeptDCS.py --varification_test=True
 ```
