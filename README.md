@@ -8,12 +8,17 @@ U-net and its four variants are implemented and their performance are compared.
 
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing our paper (bibtex below).
 
-<p align="left">
-<img src='./DeeptDCS_workflow.png' align="center" width="500">
-</p>
-<p align="right">
-<img src='./DeeptDCS_results.png' align="center" width="500">
-</p>
+<div align="center">
+<img src='./DeeptDCS_workflow.png' width="400" title="DeeptDCS workflow">
+
+Fig 1. DeeptDCS workflow
+</div>
+
+<div align="center">
+ <img src='./DeeptDCS_results.png' width="400" title="DeeptDCS results"/>
+ 
+ Fig 2. DeeptDCS results
+</div>
 
 ## Requirements
 - Python 3.6
@@ -27,9 +32,9 @@ Data is structured as follows:
 ├── dir(subject ID 1)
 │   ├── dir(Montage Position1)
 |	|	├── dir(1)
-|	|	|	├── dir(field\_cond.mat)
+|	|	|	├── dir(field_cond.mat)
 |	|	├── dir(2)
-|	|	|	├── dir(field\_cond.mat)
+|	|	|	├── dir(field_cond.mat)
 ...
 │   ├── dir(Montage Position 2)
 ...
@@ -83,7 +88,7 @@ self.model = self.attn_ResUnet_3d
 ```
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
-***2. Test a well-trained model***
+**2. Test a well-trained model**
 - Copy the model to  ```'./saved_mode'``` and rename it as 'DeeptDCS.hdf5'
 - In [```DeeptDCS.py```](./DeeptDCS.py), set ```args.epochs = 0```
 ```
