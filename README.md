@@ -30,9 +30,9 @@ Data is structured as follows:
 ├── dir(subject ID 1)
 │  ├── dir(Montage Position 1)
 |  |  ├── dir(1)
-|  |  |  ├── dir(field_cond.mat)
+|  |  |  ├── file(field_cond.mat)
 |  |  ├── dir(2)
-|  |  |  ├── dir(field_cond.mat)
+|  |  |  ├── file(field_cond.mat)
 |  |  ├── ...
 │  |  └──dir(n)
 │  ├── dir(Montage Position 2)
