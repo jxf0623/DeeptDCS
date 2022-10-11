@@ -4,7 +4,7 @@ This is an implementation of a deep learning-based transcranial direct current s
 
 The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head. 
 
-3D U-net and its four variants are implemented and their performance are compared. 
+3D U-net and its four variants (Attention U-net, Res U-net, Attention Res U-net, and MSRes U-net) are implemented and their performance are compared. 
 
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing our paper (bibtex below).
 
