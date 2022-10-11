@@ -6,7 +6,7 @@ This is an implementation of a deep learning-based tDCS emulator named DeeptDCS(
 
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing this repository (bibtex below).
 
-![Instance Segmentation Sample](assets/street.png)
+![DeeptDCS workflow](fig1.tif)
 
 
 ## Requirements
