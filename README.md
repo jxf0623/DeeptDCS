@@ -28,23 +28,20 @@ Fig 1. DeeptDCS workflow
 Data is structured as follows:
 ```markdown
 ├── dir(subject ID 1)
-│   ├── dir(Montage Position1)
-|	|	├── dir(1)
-|	|	|	├── dir(field_cond.mat)
-|	|	├── dir(2)
-|	|	|	├── dir(field_cond.mat)
-...
-│   ├── dir(Montage Position 2)
-...
-│   ├── dir(Montage Position 3)
-...
-│   ├── dir(Montage Position 4)
-...
-│   ├── dir(Montage Position 5)
-...
+│  ├── dir(Montage Position 1)
+|  |  ├── dir(1)
+|  |  |  ├── dir(field_cond.mat)
+|  |  ├── dir(2)
+|  |  |  ├── dir(field_cond.mat)
+|  |  ├── ...
+│  |  └──dir(n)
+│  ├── dir(Montage Position 2)
+|  ├── ...
+│  └── dir(Montage Position n)
 ├── dir(subject ID 2)
-...
+├── ...
 └── dir(subject ID n)
+
 ```
 An example dataset can be downloaded from [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
 
