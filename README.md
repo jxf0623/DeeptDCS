@@ -4,7 +4,7 @@ This is an implementation of a deep learning-based transcranial direct current s
 
 The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head. 
 
-U-net and its four variants are implemented and their performance are compared. 
+3D U-net and its four variants are implemented and their performance are compared. 
 
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing our paper (bibtex below).
 
@@ -112,7 +112,7 @@ python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 - Change [```dataloader.py```](./dataloader.py) to load data according to the costume dataset sturcutre.
 
 ## Citation
-Use this bibtex to cite this repository:
+Use this bibtex to cite our paper:
 ```
 @misc{matterport_maskrcnn_2017,
   title={Mask R-CNN for object detection and instance segmentation on Keras and TensorFlow},
@@ -128,7 +128,5 @@ Use this bibtex to cite this repository:
 DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelAI/unet).
 
 # TO DO
-写repo includes
-改citation
-改licence
+change citation
 grammarly
