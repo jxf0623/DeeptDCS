@@ -73,13 +73,13 @@ To use the pre-trained model, please rename the model as 'DeeptDCS.hdf5' and cop
 ## Training and Testing
 ***Neural network selection***
 
-U-net and its four variations are implemented. The default network is Attention U-net. To change the network, please search ```self.model = self.attn_unet_3d``` in [```model.py```](./model.py) and replace the command by one of the following:
+U-net and its four variations are implemented. The default network is Attention U-net. To change the network, please search ```self.model = self.attn_unet_3d(self.num_gpu)``` in [```model.py```](./model.py) and replace the command by one of the following:
 ```
-self.model = self.unet_3d
-self.model = self.MSResUnet_3d
-self.model = self.ResUnet_3d
-self.model = self.attn_unet_3d
-self.model = self.attn_ResUnet_3d
+self.model = self.unet_3d(self.num_gpu)
+self.model = self.MSResUnet_3d(self.num_gpu)
+self.model = self.ResUnet_3d(self.num_gpu)
+self.model = self.attn_unet_3d(self.num_gpu)
+self.model = self.attn_ResUnet_3d(self.num_gpu)
 ```
 
 **1. Test DeeptDCS Attention U-net model on the example dataset**
