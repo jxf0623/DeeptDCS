@@ -1,13 +1,12 @@
-# DeeptDCS
-
 # DeeptDCS: Deep Learning-Based Estimation of Currents Induced During Transcranial Direct Current Stimulation
 
-This is an implementation of a deep learning-based tDCS emulator named DeeptDCS(https://arxiv.org/abs/1703.06870) on Python 3, Keras, and TensorFlow. The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head.  
+This is an implementation of a deep learning-based transcranial direct current stimulation (tDCS) emulator named DeeptDCS (https://arxiv.org/abs/2205.01858) on Python 3, Keras, and TensorFlow. The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head. U-net and its four variants are implemented and their performance are compared. 
 
-The code is documented and designed to be easy to extend. If you use it in your research, please consider citing this repository (bibtex below).
+The code is documented and designed to be easy to extend. If you use it in your research, please consider citing our paper (bibtex below).
 
-![DeeptDCS workflow](./fig1.tif)
-
+<p align="center">
+<img src='./fig1.png' align="center" width="600">
+</p>
 
 ## Requirements
 - Python 3.6
@@ -60,6 +59,7 @@ To use the pre-trained model, please rename the model as 'DeeptDCS.hdf5' and cop
 
 ## Training and Testing
 ***Neural network selection***
+
 U-net and its four variations are implemented. The default network is Attention U-net. To change the network, please search ```self.model = self.attn_unet_3d``` in model.py and replace the command by one of the following:
 ```
 self.model = self.unet_3d
@@ -105,13 +105,10 @@ Use this bibtex to cite this repository:
 # License
 https://github.com/yingkaisha/keras-unet-collection
 
+# Acknowledgement
+gh repo clone IntelAI/unet
+
 # TO DO
-street.png 改成 fig1
 写repo includes
-改arxiv网址
 改citation
-packages
 DeeptDCS_data_samples加超链接
-
-
-> Written with [StackEdit](https://stackedit.io/).
