@@ -8,8 +8,11 @@ U-net and its four variants are implemented and their performance are compared.
 
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing our paper (bibtex below).
 
-<p align="center">
-<img src='./DeeptDCS_workflow.png' align="center" width="600">
+<p align="left">
+<img src='./DeeptDCS_workflow.png' align="center" width="500">
+</p>
+<p align="right">
+<img src='./DeeptDCS_results.png' align="center" width="500">
 </p>
 
 ## Requirements
@@ -47,7 +50,7 @@ This [model_zoo](https://drive.google.com/drive/folders/1YfUVH7xc1fN0wb1P4BvEa5k
 
 To use the pre-trained model, please rename the model as 'DeeptDCS.hdf5' and copy it to folder './saved_model/'.
 
-1. Models pre-trained on 59,000 samples constructed from 59 MRIs and five 5*5cm<sup>2 </sup> square montage positions.
+**1. Models pre-trained on 59,000 samples constructed from 59 MRIs and five 5*5cm<sup>2 </sup> square montage positions.**
 
 - Standard U-net --------- [```Unet_908137[9].hdf5```](https://drive.google.com/file/d/1zusEWfJmgl2FuscFH8Onm_OuLImx0NN6/view?usp=sharing)
 - Attention U-net -------- [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing)
@@ -56,7 +59,7 @@ To use the pre-trained model, please rename the model as 'DeeptDCS.hdf5' and cop
 - MSResU-net ------------ [```MSResUnet_913917[8].hdf5```](https://drive.google.com/file/d/1JrKlBuuk0B5hYnbAIFKjAOStvOtr_6xQ/view?usp=sharing)
 
 
-2. Attention U-net models fine-tuned on
+**2. Attention U-net models fine-tuned on**
 - three new montage positions --------------------------------[```AttnUnet_new_positions_18194801[5].hdf5```](https://drive.google.com/file/d/1QacmUwUi-iPILXFk2j2YK9ynENG94_r-/view?usp=sharing)
 - new montage shapes (5 cm diameter circular montage) ---[```AttnUnet_ellp5050_19000238[3].hdf5```](https://drive.google.com/file/d/1NXtf8RywecmoYoty2W9lniSONakO6EcB/view?usp=sharing)
 - new  montage size (4*4cm<sup>2 </sup> square montage) ---------------[```AttnUnet_rect4040_19000241[4].hdf5```](https://drive.google.com/file/d/1pg2U7ad5xKvSlpvt7DCugYSYW-F92fm1/view?usp=sharing)
@@ -75,24 +78,24 @@ self.model = self.attn_unet_3d
 self.model = self.attn_ResUnet_3d
 ```
 
-1. Train and test a new model from scratch
+**1. Train and test a new model from scratch**
 - Clear or delete directory './saved_mode'
 ```
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
-2. Test a well-trained model
+***2. Test a well-trained model***
 - Copy the model to  ```'./saved_mode'``` and rename it as 'DeeptDCS.hdf5'
 - In [```DeeptDCS.py```](./DeeptDCS.py), set ```args.epochs = 0```
 ```
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
-3. Transfer learning for non-trained montage configurations
+**3. Transfer learning for non-trained montage configurations**
 - Copy the pre-trained model to  './saved_mode' and rename it as 'DeeptDCS.hdf5'
 - In [```dataloader.py```](./dataloader.py), change ```self.subjectIDs```, ```self.electrode_positions```, ```self.data_size_1position_1subject``` according to the new dataset.
 ```
 python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 ```
-4. Train and test on customdataset
+**4. Train and test on customdataset**
 - Change [```dataloader.py```](./dataloader.py) to load data according to the costume dataset sturcutre.
 
 ## Citation
