@@ -34,13 +34,13 @@ Data is structured as follows:
 |  |  ├── dir(2)
 |  |  |  ├── file(field_cond.mat)
 |  |  ├── ...
-│  |  └──dir(n)
+│  |  └──dir(X)
 │  ├── dir(Montage Position 2)
 |  ├── ...
-│  └── dir(Montage Position n)
+│  └── dir(Montage Position Y)
 ├── dir(subject ID 2)
 ├── ...
-└── dir(subject ID n)
+└── dir(subject ID Z)
 
 ```
 An example dataset can be downloaded from [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
