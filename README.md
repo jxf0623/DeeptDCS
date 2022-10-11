@@ -1,11 +1,15 @@
 # DeeptDCS: Deep Learning-Based Estimation of Currents Induced During Transcranial Direct Current Stimulation
 
-This is an implementation of a deep learning-based transcranial direct current stimulation (tDCS) emulator named DeeptDCS (https://arxiv.org/abs/2205.01858) on Python 3, Keras, and TensorFlow. The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head. U-net and its four variants are implemented and their performance are compared. 
+This is an implementation of a deep learning-based transcranial direct current stimulation (tDCS) emulator named DeeptDCS (https://arxiv.org/abs/2205.01858) on Python 3, Keras, and TensorFlow. 
+
+The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head. 
+
+U-net and its four variants are implemented and their performance are compared. 
 
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing our paper (bibtex below).
 
 <p align="center">
-<img src='./fig1.png' align="center" width="600">
+<img src='./DeeptDCS_workflow.png' align="center" width="600">
 </p>
 
 ## Requirements
@@ -102,9 +106,6 @@ Use this bibtex to cite this repository:
 }
 ```
 
-# License
-https://github.com/yingkaisha/keras-unet-collection
-
 # Acknowledgement
 gh repo clone IntelAI/unet
 
@@ -112,3 +113,4 @@ gh repo clone IntelAI/unet
 写repo includes
 改citation
 DeeptDCS_data_samples加超链接
+改licence
