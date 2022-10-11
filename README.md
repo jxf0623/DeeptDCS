@@ -82,7 +82,7 @@ self.model = self.attn_unet_3d(self.num_gpu)
 self.model = self.attn_ResUnet_3d(self.num_gpu)
 ```
 
-**1. Test DeeptDCS Attention U-net model on the example dataset**
+**1. Test pre-trained DeeptDCS Attention U-net model on the example dataset**
 - Download the example dataset [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
 - Create directory ```'./saved_model/'```
 - Download the pre-trained model [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing), rename it as ```DeeptDCS.hdf5```, and put it into the folder ```'./saved_model/'```.
@@ -108,8 +108,8 @@ python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
 python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 ```
-**5. Train and test on customdataset**
-- Change [```dataloader.py```](./dataloader.py) to load data according to the costume dataset sturcutre.
+**5. Train and test on custom dataset**
+- Change [```dataloader.py```](./dataloader.py) to load data according to the costume dataset structure.
 
 ## Citation
 Use this bibtex to cite our paper:
@@ -124,7 +124,7 @@ Use this bibtex to cite our paper:
 }
 ```
 
-# Acknowledgement
+# Acknowledgment
 DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelAI/unet).
 
 # TO DO
