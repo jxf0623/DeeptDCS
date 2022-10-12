@@ -109,7 +109,16 @@ python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 ## Citation
 Please use this bibtex to cite our paper:
 ```
-
+@ARTICLE{9915436,  
+  author={Jia, Xiaofan and Sayed, Sadeed Bin and Hasan, Nahian Ibn and Gomez, Luis J. and Huang, Guang-Bin and Yucel, Abdulkadir C.},  
+  journal={IEEE Transactions on Biomedical Engineering},   
+  title={DeeptDCS: Deep Learning-Based Estimation of Currents Induced During Transcranial Direct Current Stimulation},   
+  year={2022},  
+  volume={},  
+  number={},  
+  pages={1-11},  
+  doi={10.1109/TBME.2022.3213266}
+}
 ```
 
 # Acknowledgment
