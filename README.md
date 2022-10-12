@@ -45,26 +45,26 @@ Data is structured as follows:
 └── dir(subject ID Z)
 
 ```
-An example dataset can be downloaded from [```DeeptDCS_data_samples```](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
+An example dataset can be downloaded from [```DeeptDCS_data_samples```](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing)*.
 
 ## Model Zoo
-This [```model_zoo```](https://drive.google.com/drive/folders/1YfUVH7xc1fN0wb1P4BvEa5kDLmXi_SvV) contains pre-trained models presented in our DeeptDCS paper. 
+This [```model_zoo```](https://drive.google.com/drive/folders/1YfUVH7xc1fN0wb1P4BvEa5kDLmXi_SvV)* contains pre-trained models presented in our DeeptDCS paper. 
 
 To use the pre-trained model, please rename the model as 'DeeptDCS.hdf5' and copy it to folder './saved_model/'.
 
 **1. Models pre-trained on 59,000 samples constructed from 59 MRIs and five 5*5cm<sup>2 </sup> square montage positions.**
 
-- Standard U-net --------- [```Unet_908137[9].hdf5```](https://drive.google.com/file/d/1zusEWfJmgl2FuscFH8Onm_OuLImx0NN6/view?usp=sharing)
-- Attention U-net -------- [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing)
-- Res U-net --------------- [```ResUnet_913918[5].hdf5```](https://drive.google.com/file/d/1qGhvTcvNoqixvudbxFbOwGzSubUoqRws/view?usp=sharing)
-- Attention Res U-net---- [```AttnResUnet_913915[5].hdf5```](https://drive.google.com/file/d/191d0INvDxc2ir6aKDlW6ULhsoJLIIH2T/view?usp=sharing)
-- MSResU-net ------------ [```MSResUnet_913917[8].hdf5```](https://drive.google.com/file/d/1JrKlBuuk0B5hYnbAIFKjAOStvOtr_6xQ/view?usp=sharing)
+- Standard U-net --------- [```Unet_908137[9].hdf5```](https://drive.google.com/file/d/1zusEWfJmgl2FuscFH8Onm_OuLImx0NN6/view?usp=sharing)*
+- Attention U-net -------- [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing)*
+- Res U-net --------------- [```ResUnet_913918[5].hdf5```](https://drive.google.com/file/d/1qGhvTcvNoqixvudbxFbOwGzSubUoqRws/view?usp=sharing)*
+- Attention Res U-net---- [```AttnResUnet_913915[5].hdf5```](https://drive.google.com/file/d/191d0INvDxc2ir6aKDlW6ULhsoJLIIH2T/view?usp=sharing)*
+- MSResU-net ------------ [```MSResUnet_913917[8].hdf5```](https://drive.google.com/file/d/1JrKlBuuk0B5hYnbAIFKjAOStvOtr_6xQ/view?usp=sharing)*
 
 
 **2. Attention U-net models fine-tuned on**
-- three new montage positions --------------------------------[```AttnUnet_new_positions_18194801[5].hdf5```](https://drive.google.com/file/d/1QacmUwUi-iPILXFk2j2YK9ynENG94_r-/view?usp=sharing)
-- new montage shapes (5 cm diameter circular montage) ---[```AttnUnet_ellp5050_19000238[3].hdf5```](https://drive.google.com/file/d/1NXtf8RywecmoYoty2W9lniSONakO6EcB/view?usp=sharing)
-- new  montage size (4*4cm<sup>2 </sup> square montage) ---------------[```AttnUnet_rect4040_19000241[4].hdf5```](https://drive.google.com/file/d/1pg2U7ad5xKvSlpvt7DCugYSYW-F92fm1/view?usp=sharing)
+- three new montage positions --------------------------------[```AttnUnet_new_positions_18194801[5].hdf5```](https://drive.google.com/file/d/1QacmUwUi-iPILXFk2j2YK9ynENG94_r-/view?usp=sharing)*
+- new montage shapes (5 cm diameter circular montage) ---[```AttnUnet_ellp5050_19000238[3].hdf5```](https://drive.google.com/file/d/1NXtf8RywecmoYoty2W9lniSONakO6EcB/view?usp=sharing)*
+- new montage size (4\*4cm<sup>2</sup> square montage) ---------------[```AttnUnet_rect4040_19000241[4].hdf5```](https://drive.google.com/file/d/1pg2U7ad5xKvSlpvt7DCugYSYW-F92fm1/view?usp=sharing)*
 
 
 ## Training and Testing
@@ -80,9 +80,9 @@ self.model = self.attn_ResUnet_3d(self.num_gpu)
 ```
 
 **1. Test pre-trained DeeptDCS Attention U-net model on the example dataset**
-- Download the example dataset [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
+- Download the example dataset [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing)*
 - Create directory ```'./saved_model/'```
-- Download the pre-trained model [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing), rename it as ```DeeptDCS.hdf5```, and put it into the folder ```'./saved_model/'```.
+- Download the pre-trained model [```AttnUnet_908136[11].hdf5```](https://drive.google.com/file/d/1E69W79b7c2sNUDSZRkc12VnqNXjmjAxw/view?usp=sharing)\*, rename it as ```DeeptDCS.hdf5```, and put it into the folder ```'./saved_model/'```
 ```
 python train DeeptDCS.py --varification_test=True
 ```
@@ -108,7 +108,7 @@ python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 **5. Train and test on custom dataset**
 - Change [```dataloader.py```](./dataloader.py) to load data according to the costume dataset structure.
 
-### **The aforementioned data samples and pre-trained models are also available at [```百度云```](https://pan.baidu.com/s/1YURgNzZk_OFcoadpkk_GlQ?pwd=tDCS) (提取码tDCS).**
+\* **The aforementioned data samples and pre-trained models are also available at [```百度云```](https://pan.baidu.com/s/1YURgNzZk_OFcoadpkk_GlQ?pwd=tDCS) (提取码tDCS).**
 
 ## Citation
 Please use this bibtex to cite our paper:
