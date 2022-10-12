@@ -108,6 +108,8 @@ python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
 **5. Train and test on custom dataset**
 - Change [```dataloader.py```](./dataloader.py) to load data according to the costume dataset structure.
 
+### **The aforementioned data samples and pre-trained models are also available at [```百度云```](https://pan.baidu.com/s/1YURgNzZk_OFcoadpkk_GlQ?pwd=tDCS) (提取码tDCS).**
+
 ## Citation
 Please use this bibtex to cite our paper:
 ```
@@ -127,7 +129,6 @@ Please use this bibtex to cite our paper:
 DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelAI/unet).
 
 
-### **The aforementioned data samples and pre-trained models are also available at [```百度云```](https://pan.baidu.com/s/1YURgNzZk_OFcoadpkk_GlQ?pwd=tDCS).**
 
 # TO DO
 change citation
