@@ -126,7 +126,8 @@ Please use this bibtex to cite our paper:
 # Acknowledgment
 DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelAI/unet).
 
-## The aforementioned data samples and pre-trained models are also available at [```百度云```](https://pan.baidu.com/s/1YURgNzZk_OFcoadpkk_GlQ?pwd=tDCS).
+
+### **The aforementioned data samples and pre-trained models are also available at [```百度云```](https://pan.baidu.com/s/1YURgNzZk_OFcoadpkk_GlQ?pwd=tDCS).**
 
 # TO DO
 change citation
