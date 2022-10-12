@@ -128,3 +128,5 @@ DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelA
 
 # TO DO
 change citation
+
+add baiduyun
