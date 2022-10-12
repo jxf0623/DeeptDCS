@@ -92,13 +92,13 @@ python train DeeptDCS.py --varification_test=True
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
 **3. Test a well-trained model**
-- Copy the model to  ```'./saved_mode'``` and rename it as 'DeeptDCS.hdf5'
+- Copy the model to  ```'./saved_model/'``` and rename it as 'DeeptDCS.hdf5'
 - In [```DeeptDCS.py```](./DeeptDCS.py), set ```args.epochs = 0```
 ```
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
 **4. Transfer learning for non-trained montage configurations**
-- Copy the pre-trained model to  './saved_mode' and rename it as 'DeeptDCS.hdf5'
+- Copy the pre-trained model to  './saved_model/' and rename it as 'DeeptDCS.hdf5'
 - In [```dataloader.py```](./dataloader.py), change ```self.subjectIDs```, ```self.electrode_positions```, ```self.data_size_1position_1subject``` according to the new dataset.
 ```
 python train DeeptDCS.py --data_path=/path/to/transfer_learning_dataset/
