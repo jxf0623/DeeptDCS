@@ -1,22 +1,24 @@
 # DeeptDCS: Deep learning-based estimation of currents induced during transcranial direct current stimulation
 
-This is an implementation of a deep learning-based ***transcranial direct current stimulation (tDCS) emulator*** named [DeeptDCS](https://arxiv.org/abs/2205.01858) on Python 3, Keras, and TensorFlow. The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head. 
+This is an implementation of a deep learning-based ***transcranial direct current stimulation (tDCS) emulator*** named [DeeptDCS (https://arxiv.org/abs/2205.01858)](https://arxiv.org/abs/2205.01858) on Python 3, Keras, and TensorFlow. The emulator leverages Attention U-net taking the volume conductor models (VCMs) of human head tissues as inputs and outputting the three-dimensional current density distribution across the entire head. 
 
 ***3D U-net and its four variants (Attention U-net, Res U-net, Attention Res U-net, and MSRes U-net)*** are implemented and their performance are compared. 
 
 The code is designed to be easy to extend. If you use it in your research, please consider citing our paper (bibtex below).
 
 <div align="center">
-<img src='./DeeptDCS_workflow.png' width="400" title="DeeptDCS workflow">
+<img src='./DeeptDCS_workflow.png' width="600" title="DeeptDCS workflow">
 
 Fig 1. DeeptDCS workflow
 </div>
 
-<div align="center">
+<!---
+ <div align="center">
  <img src='./DeeptDCS_results.png' width="400" title="DeeptDCS results"/>
  
  Fig 2. DeeptDCS results
-</div>
+ </div>
+-->
 
 ## Requirements
 - Python 3.6
