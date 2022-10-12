@@ -45,10 +45,10 @@ Data is structured as follows:
 └── dir(subject ID Z)
 
 ```
-An example dataset can be downloaded from [DeeptDCS_data_samples](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
+An example dataset can be downloaded from [```DeeptDCS_data_samples```](https://drive.google.com/drive/folders/1KA6TOJwTjbvSeuLsv6JoE8d3gnnCVWDV?usp=sharing).
 
 ## Model Zoo
-This [model_zoo](https://drive.google.com/drive/folders/1YfUVH7xc1fN0wb1P4BvEa5kDLmXi_SvV) contains pre-trained models presented in our DeeptDCS paper. 
+This [```model_zoo```](https://drive.google.com/drive/folders/1YfUVH7xc1fN0wb1P4BvEa5kDLmXi_SvV) contains pre-trained models presented in our DeeptDCS paper. 
 
 To use the pre-trained model, please rename the model as 'DeeptDCS.hdf5' and copy it to folder './saved_model/'.
 
@@ -125,6 +125,8 @@ Please use this bibtex to cite our paper:
 
 # Acknowledgment
 DeeptDCS emulator is developed based on [IntelAI/unet](https://github.com/IntelAI/unet).
+
+## The aforementioned data samples and pre-trained models are also available at [```百度云```](https://pan.baidu.com/s/1YURgNzZk_OFcoadpkk_GlQ?pwd=tDCS).
 
 # TO DO
 change citation
