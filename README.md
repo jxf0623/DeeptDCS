@@ -89,7 +89,7 @@ python train DeeptDCS.py --varification_test=True
 
 **2. Train and test a new model from scratch**
 - Clear or delete directory ```'./saved_model/'```
-- - In [```dataloader.py```](./dataloader.py), change ```self.subjectIDs```, ```self.electrode_positions```, ```self.data_size_1position_1subject``` according to the new dataset.
+- In [```dataloader.py```](./dataloader.py), change ```self.subjectIDs```, ```self.electrode_positions```, ```self.data_size_1position_1subject``` according to the new dataset.
 ```
 python train DeeptDCS.py --data_path=/path/to/dataset/
 ```
