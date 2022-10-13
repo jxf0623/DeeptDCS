@@ -12,6 +12,12 @@ The code is designed to be easy to extend. If you use it in your research, pleas
 Fig 1. DeeptDCS workflow
 </div>
 
+ <div align="center">
+ <img src='./DeeptDCS_results.png' width="400" title="DeeptDCS results"/>
+ 
+ Fig 2. DeeptDCS results
+ </div>
+ 
 <!---
  <div align="center">
  <img src='./DeeptDCS_results.png' width="400" title="DeeptDCS results"/>
